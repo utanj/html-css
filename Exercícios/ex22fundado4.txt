@@ -1,0 +1,13 @@
+title
+Posicionamanto
+
+<style>
+	body {
+	   height: 96vh;
+	   border: 1px dashed black;
+	   background-image: url('imagens/me.png');
+	   background-size: 200px;
+	   bacground-repeat: no-repeat;
+	   background-position: right bottom;
+}
+</style>
