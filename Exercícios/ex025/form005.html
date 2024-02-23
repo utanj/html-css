@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 5</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <form action="registo.php" method="post">
+        <p>
+            <label for="icor">Cor:</label>
+            <input type="color" name="cor" id="icor" value="#0000" oninput="hex.innerHTML=icor.value">
+            <output name="hex" id="ihex">#0000</output>
+        </p>
+        <p>
+            <label for="irange">Nível de Satisfação (de 1 a 5):</label>
+            <input type="range" name="range" id="irange" value="3" min="1" max="5" step="1" oninput="inivel.innerHTML=Number(irange.value)">
+            <output name="nivel" id="inivel">3</output>
+        </p>
+        <p>
+            <label for="ifile">Foto do perfil:</label>
+            <input type="file" name="file" id="ifile" accept=".jpg, .jpeg, .png, .gif, image/jpeg, image/png, image/gif" multiple>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
